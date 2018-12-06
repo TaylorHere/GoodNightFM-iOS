@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		345BF32721B83BC500BE7F77 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 345BF32621B83BC500BE7F77 /* Launch Screen.storyboard */; };
+		345BF32B21B83FBF00BE7F77 /* CradCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BF32921B83FBE00BE7F77 /* CradCell.swift */; };
+		345BF32C21B83FBF00BE7F77 /* CradCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 345BF32A21B83FBF00BE7F77 /* CradCell.xib */; };
+		345BF35021B86DD600BE7F77 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BF34F21B86DD600BE7F77 /* PinterestLayout.swift */; };
+		345BF35221B8724C00BE7F77 /* CardStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BF35121B8724C00BE7F77 /* CardStackLayout.swift */; };
+		345BF35421B8736000BE7F77 /* CardGalleryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BF35321B8736000BE7F77 /* CardGalleryLayout.swift */; };
+		345BF35621B9902200BE7F77 /* PageCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BF35521B9902200BE7F77 /* PageCollectionLayout.swift */; };
+		345BF35821B9AD7600BE7F77 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BF35721B9AD7500BE7F77 /* DetailViewController.swift */; };
 		349E2F4421B10BA6007400B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E2F4321B10BA6007400B2 /* AppDelegate.swift */; };
-		349E2F4621B10BA6007400B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E2F4521B10BA6007400B2 /* ViewController.swift */; };
+		349E2F4621B10BA6007400B2 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E2F4521B10BA6007400B2 /* IndexViewController.swift */; };
 		349E2F4921B10BA7007400B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349E2F4721B10BA7007400B2 /* Main.storyboard */; };
 		349E2F4B21B10BAF007400B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349E2F4A21B10BAF007400B2 /* Assets.xcassets */; };
-		349E2F4E21B10BAF007400B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349E2F4C21B10BAF007400B2 /* LaunchScreen.storyboard */; };
 		349E2F5921B10BAF007400B2 /* GoodNightFMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E2F5821B10BAF007400B2 /* GoodNightFMTests.swift */; };
 		349E2F6421B10BAF007400B2 /* GoodNightFMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E2F6321B10BAF007400B2 /* GoodNightFMUITests.swift */; };
 /* End PBXBuildFile section */
@@ -34,12 +41,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		345BF32621B83BC500BE7F77 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		345BF32921B83FBE00BE7F77 /* CradCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CradCell.swift; sourceTree = "<group>"; };
+		345BF32A21B83FBF00BE7F77 /* CradCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CradCell.xib; sourceTree = "<group>"; };
+		345BF34F21B86DD600BE7F77 /* PinterestLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
+		345BF35121B8724C00BE7F77 /* CardStackLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackLayout.swift; sourceTree = "<group>"; };
+		345BF35321B8736000BE7F77 /* CardGalleryLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGalleryLayout.swift; sourceTree = "<group>"; };
+		345BF35521B9902200BE7F77 /* PageCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionLayout.swift; sourceTree = "<group>"; };
+		345BF35721B9AD7500BE7F77 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		349E2F4021B10BA6007400B2 /* GoodNightFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodNightFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349E2F4321B10BA6007400B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		349E2F4521B10BA6007400B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		349E2F4521B10BA6007400B2 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		349E2F4821B10BA7007400B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		349E2F4A21B10BAF007400B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		349E2F4D21B10BAF007400B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		349E2F4F21B10BAF007400B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349E2F5421B10BAF007400B2 /* GoodNightFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodNightFMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		349E2F5821B10BAF007400B2 /* GoodNightFMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodNightFMTests.swift; sourceTree = "<group>"; };
@@ -74,6 +88,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		345BF32321B8396600BE7F77 /* IndexSence */ = {
+			isa = PBXGroup;
+			children = (
+				349E2F4521B10BA6007400B2 /* IndexViewController.swift */,
+			);
+			path = IndexSence;
+			sourceTree = "<group>";
+		};
+		345BF32421B8397200BE7F77 /* DetailSence */ = {
+			isa = PBXGroup;
+			children = (
+				345BF35721B9AD7500BE7F77 /* DetailViewController.swift */,
+			);
+			path = DetailSence;
+			sourceTree = "<group>";
+		};
+		345BF32521B8397900BE7F77 /* DiscoverSence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DiscoverSence;
+			sourceTree = "<group>";
+		};
+		345BF32821B83F8B00BE7F77 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				345BF35A21B9B26800BE7F77 /* crad */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		345BF33121B86B5C00BE7F77 /* layouts */ = {
+			isa = PBXGroup;
+			children = (
+				345BF34F21B86DD600BE7F77 /* PinterestLayout.swift */,
+				345BF35121B8724C00BE7F77 /* CardStackLayout.swift */,
+				345BF35321B8736000BE7F77 /* CardGalleryLayout.swift */,
+				345BF35521B9902200BE7F77 /* PageCollectionLayout.swift */,
+			);
+			path = layouts;
+			sourceTree = "<group>";
+		};
+		345BF35921B9B05E00BE7F77 /* Componts */ = {
+			isa = PBXGroup;
+			children = (
+				345BF35B21B9B29C00BE7F77 /* transactions */,
+				345BF33121B86B5C00BE7F77 /* layouts */,
+				345BF32821B83F8B00BE7F77 /* cells */,
+			);
+			path = Componts;
+			sourceTree = "<group>";
+		};
+		345BF35A21B9B26800BE7F77 /* crad */ = {
+			isa = PBXGroup;
+			children = (
+				345BF32921B83FBE00BE7F77 /* CradCell.swift */,
+				345BF32A21B83FBF00BE7F77 /* CradCell.xib */,
+			);
+			path = crad;
+			sourceTree = "<group>";
+		};
+		345BF35B21B9B29C00BE7F77 /* transactions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = transactions;
+			sourceTree = "<group>";
+		};
 		349E2F3721B10BA6007400B2 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +179,15 @@
 		349E2F4221B10BA6007400B2 /* GoodNightFM */ = {
 			isa = PBXGroup;
 			children = (
+				345BF35921B9B05E00BE7F77 /* Componts */,
+				345BF32521B8397900BE7F77 /* DiscoverSence */,
+				345BF32421B8397200BE7F77 /* DetailSence */,
+				345BF32321B8396600BE7F77 /* IndexSence */,
 				349E2F4321B10BA6007400B2 /* AppDelegate.swift */,
-				349E2F4521B10BA6007400B2 /* ViewController.swift */,
 				349E2F4721B10BA7007400B2 /* Main.storyboard */,
 				349E2F4A21B10BAF007400B2 /* Assets.xcassets */,
-				349E2F4C21B10BAF007400B2 /* LaunchScreen.storyboard */,
 				349E2F4F21B10BAF007400B2 /* Info.plist */,
+				345BF32621B83BC500BE7F77 /* Launch Screen.storyboard */,
 			);
 			path = GoodNightFM;
 			sourceTree = "<group>";
@@ -229,7 +314,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349E2F4E21B10BAF007400B2 /* LaunchScreen.storyboard in Resources */,
+				345BF32721B83BC500BE7F77 /* Launch Screen.storyboard in Resources */,
+				345BF32C21B83FBF00BE7F77 /* CradCell.xib in Resources */,
 				349E2F4B21B10BAF007400B2 /* Assets.xcassets in Resources */,
 				349E2F4921B10BA7007400B2 /* Main.storyboard in Resources */,
 			);
@@ -256,8 +342,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349E2F4621B10BA6007400B2 /* ViewController.swift in Sources */,
+				345BF35621B9902200BE7F77 /* PageCollectionLayout.swift in Sources */,
+				345BF35221B8724C00BE7F77 /* CardStackLayout.swift in Sources */,
+				345BF35021B86DD600BE7F77 /* PinterestLayout.swift in Sources */,
+				349E2F4621B10BA6007400B2 /* IndexViewController.swift in Sources */,
+				345BF32B21B83FBF00BE7F77 /* CradCell.swift in Sources */,
+				345BF35421B8736000BE7F77 /* CardGalleryLayout.swift in Sources */,
 				349E2F4421B10BA6007400B2 /* AppDelegate.swift in Sources */,
+				345BF35821B9AD7600BE7F77 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +391,6 @@
 				349E2F4821B10BA7007400B2 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		349E2F4C21B10BAF007400B2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				349E2F4D21B10BAF007400B2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -433,6 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364SAD8GZP;
 				INFOPLIST_FILE = GoodNightFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,7 +526,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = taylor.GoodNightFM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,15 +535,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 364SAD8GZP;
 				INFOPLIST_FILE = GoodNightFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = taylor.GoodNightFM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

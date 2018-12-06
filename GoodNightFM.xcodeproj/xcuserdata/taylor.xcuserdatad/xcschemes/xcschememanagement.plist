@@ -7,7 +7,25 @@
 		<key>GoodNightFM.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>349E2F3F21B10BA6007400B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>349E2F5321B10BAF007400B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>349E2F5E21B10BAF007400B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
