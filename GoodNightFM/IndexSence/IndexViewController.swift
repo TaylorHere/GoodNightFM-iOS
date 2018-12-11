@@ -10,6 +10,9 @@ import UIKit
 
 class IndexViewController: UICollectionViewController {
 
+    var use_transition = ContextPopTransition()
+    var selectedFrame:CGRect? = nil
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
@@ -33,11 +36,12 @@ extension IndexViewController {
     }
 
     func registerCell() {
-            let nib = UINib(nibName: String(describing: CradCell.self), bundle: nil)
-            self.collectionView?.register(nib, forCellWithReuseIdentifier: String(describing: CradCell.self))
+        let nib = UINib(nibName: String(describing: CradCell.self), bundle: nil)
+        self.collectionView?.register(nib, forCellWithReuseIdentifier: String(describing: CradCell.self))
     }
     func configrateNavBar(){
 //        navigationItem.leftBarButtonItem?.title = "hi"
+        self.navigationController?.delegate = self
     }
 
 }
@@ -51,10 +55,12 @@ extension IndexViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let toViewController: DetailViewController = storyboard.instantiateViewController(withIdentifier: String(describing: DetailViewController.self)) as! DetailViewController
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let toViewController = mainStoryboard.instantiateViewController(withIdentifier: String(describing: DetailViewController.self))
+        self.selectedFrame = (collectionView.layoutAttributesForItem(at: indexPath)?.frame)!
         self.navigationController?.pushViewController(toViewController, animated: true)
     }
+
 }
 
 
@@ -73,9 +79,16 @@ extension IndexViewController {
 
 }
 
-//// PinteresLayoutDelegate
-//extension IndexViewController: PinterestLayoutDelegate {
-//    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-//        return 400
-//    }
-//}
+extension IndexViewController: UINavigationControllerDelegate {
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        switch operation {
+        case .push:
+            return ShareElementTrasition(duration: 0.34, isPresenting: true, originFrame: self.selectedFrame!, image: UIImage(named: "bitmap")!)
+        default:
+            return ShareElementTrasition(duration: 0.34, isPresenting: false, originFrame: self.selectedFrame!, image: UIImage(named: "bitmap")!)
+        }
+    }
+    
+}

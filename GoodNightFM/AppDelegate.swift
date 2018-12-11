@@ -14,14 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        configureNavigationTabBar()
+        setupNavigationTabBar()
         return true
     }
 }
 
 extension AppDelegate {
     
-    func configureNavigationTabBar() {
+    func setupNavigationTabBar() {
         //set Title Color here.
         let navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "offWhite")!]
