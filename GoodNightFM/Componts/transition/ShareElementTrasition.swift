@@ -28,27 +28,25 @@ class ShareElementTrasition : NSObject, UIViewControllerAnimatedTransitioning {
         
         guard let fromView = transitionContext.view(forKey: UITransitionContextViewKey.from) else { return }
         guard let toView = transitionContext.view(forKey: UITransitionContextViewKey.to) else { return }
-        
+
         self.isPresenting ? container.addSubview(toView) : container.insertSubview(toView, belowSubview: fromView)
-        
+//
         let detailView = isPresenting ? toView : fromView
-        
-        guard let artwork = detailView.viewWithTag(CustomAnimatorTag) as? UIImageView else { return }
+        let artwork = detailView.viewWithTag(CustomAnimatorTag) as! UIImageView
         artwork.image = image
         artwork.alpha = 0
-        
+
         let transitionImageView = UIImageView(frame: isPresenting ? originFrame : artwork.frame)
         transitionImageView.image = image
-        
         container.addSubview(transitionImageView)
-        
-        toView.frame = isPresenting ?  CGRect(x: fromView.frame.width, y: 0, width: toView.frame.width, height: toView.frame.height) : toView.frame
+
+        toView.frame = isPresenting ? transitionImageView.frame : toView.frame
         toView.alpha = isPresenting ? 0 : 1
         toView.layoutIfNeeded()
-        
+//
         UIView.animate(withDuration: duration, animations: {
             transitionImageView.frame = self.isPresenting ? artwork.frame : self.originFrame
-            detailView.frame = self.isPresenting ? fromView.frame : CGRect(x: toView.frame.width, y: 0, width: toView.frame.width, height: toView.frame.height)
+            detailView.frame = self.isPresenting ? fromView.frame : transitionImageView.frame
             detailView.alpha = self.isPresenting ? 1 : 0
         }, completion: { (finished) in
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)

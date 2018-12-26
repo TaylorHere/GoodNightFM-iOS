@@ -57,7 +57,8 @@ extension IndexViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let toViewController = mainStoryboard.instantiateViewController(withIdentifier: String(describing: DetailViewController.self))
-        self.selectedFrame = (collectionView.layoutAttributesForItem(at: indexPath)?.frame)!
+        let theAttributes:UICollectionViewLayoutAttributes! = collectionView.layoutAttributesForItem(at: indexPath)
+        self.selectedFrame = collectionView.convert(theAttributes.frame, to: collectionView.superview!.superview)
         self.navigationController?.pushViewController(toViewController, animated: true)
     }
 
@@ -82,12 +83,11 @@ extension IndexViewController {
 extension IndexViewController: UINavigationControllerDelegate {
     
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
         switch operation {
         case .push:
-            return ShareElementTrasition(duration: 0.34, isPresenting: true, originFrame: self.selectedFrame!, image: UIImage(named: "bitmap")!)
+            return ShareElementTrasition(duration: 0.25, isPresenting: true, originFrame: self.selectedFrame!, image: UIImage(named: "bitmap")!)
         default:
-            return ShareElementTrasition(duration: 0.34, isPresenting: false, originFrame: self.selectedFrame!, image: UIImage(named: "bitmap")!)
+            return ShareElementTrasition(duration: 0.2, isPresenting: false, originFrame: self.selectedFrame!, image: UIImage(named: "bitmap")!)
         }
     }
     
