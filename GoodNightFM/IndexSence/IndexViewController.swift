@@ -86,9 +86,9 @@ extension IndexViewController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         switch operation {
         case .push:
-            return CoverTrasition(duration: 3, isPresenting: true, originFrame: self.selectedFrame!, cell: selectedCell!)
+            return CoverTrasition(duration: 0.3, isPresenting: true, originFrame: self.selectedFrame!, cell: selectedCell!)
         default:
-            return CoverTrasition(duration: 3, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
+            return CoverTrasition(duration: 0.3, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
         }
     }
     
