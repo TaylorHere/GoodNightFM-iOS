@@ -10,7 +10,10 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-
+    @IBOutlet weak var cover: UIImageView!
+    @IBOutlet weak var controllButton: UIImageView!
+    @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var _title: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

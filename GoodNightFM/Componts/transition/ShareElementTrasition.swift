@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShareElementTrasition : NSObject, UIViewControllerAnimatedTransitioning {
+class CoverTrasition : NSObject, UIViewControllerAnimatedTransitioning {
     var duration : TimeInterval
     var isPresenting : Bool
     var originFrame : CGRect

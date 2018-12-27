@@ -50,6 +50,12 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="controlButton" destination="GzI-le-Ke6" id="qf8-jT-dW2"/>
+                <outlet property="cover" destination="2Gb-WJ-dQy" id="Xb6-dr-NZl"/>
+                <outlet property="subtitle" destination="zqC-FN-4H4" id="o4d-mk-Rtr"/>
+                <outlet property="title" destination="Vvl-uQ-RMN" id="suw-he-J6A"/>
+            </connections>
             <point key="canvasLocation" x="56" y="48.575712143928037"/>
         </collectionViewCell>
     </objects>

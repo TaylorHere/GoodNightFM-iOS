@@ -10,9 +10,9 @@ import UIKit
 
 class IndexViewController: UICollectionViewController {
 
-    var use_transition = ContextPopTransition()
     var selectedFrame:CGRect? = nil
-
+    var selectedCell:CradCell? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
@@ -59,6 +59,7 @@ extension IndexViewController {
         let toViewController = mainStoryboard.instantiateViewController(withIdentifier: String(describing: DetailViewController.self))
         let theAttributes:UICollectionViewLayoutAttributes! = collectionView.layoutAttributesForItem(at: indexPath)
         self.selectedFrame = collectionView.convert(theAttributes.frame, to: collectionView.superview!.superview)
+        self.selectedCell = collectionView.cellForItem(at: indexPath) as! CradCell
         self.navigationController?.pushViewController(toViewController, animated: true)
     }
 
@@ -85,9 +86,9 @@ extension IndexViewController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         switch operation {
         case .push:
-            return ShareElementTrasition(duration: 0.25, isPresenting: true, originFrame: self.selectedFrame!, image: UIImage(named: "bitmap")!)
+            return CoverTrasition(duration: 3, isPresenting: true, originFrame: self.selectedFrame!, cell: selectedCell!)
         default:
-            return ShareElementTrasition(duration: 0.2, isPresenting: false, originFrame: self.selectedFrame!, image: UIImage(named: "bitmap")!)
+            return CoverTrasition(duration: 3, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
         }
     }
     

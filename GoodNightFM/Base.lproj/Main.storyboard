@@ -100,7 +100,7 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lCk-kE-1Kb">
                                 <rect key="frame" x="27" y="283" width="321" height="195"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" name="dark"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" name="offWhite"/>
@@ -118,6 +118,12 @@
                         <color key="backgroundColor" name="dark"/>
                         <viewLayoutGuide key="safeArea" id="o9a-4t-5uO"/>
                     </view>
+                    <connections>
+                        <outlet property="_title" destination="P3M-1A-pMG" id="5jr-bM-oK4"/>
+                        <outlet property="controllButton" destination="bmh-dt-NXc" id="jLr-Z0-4VW"/>
+                        <outlet property="cover" destination="5TB-mT-GAd" id="E3g-kQ-C6C"/>
+                        <outlet property="subtitle" destination="vIH-24-bgV" id="iZP-Kc-oK0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWj-JY-EL5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

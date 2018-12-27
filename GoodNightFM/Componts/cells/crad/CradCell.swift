@@ -10,6 +10,10 @@ import UIKit
 
 class CradCell: UICollectionViewCell {
 
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var cover: UIImageView!
+    @IBOutlet weak var controlButton: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
