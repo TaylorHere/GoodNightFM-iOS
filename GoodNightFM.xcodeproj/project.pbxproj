@@ -16,7 +16,8 @@
 		345BF35421B8736000BE7F77 /* CardGalleryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BF35321B8736000BE7F77 /* CardGalleryLayout.swift */; };
 		345BF35621B9902200BE7F77 /* PageCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BF35521B9902200BE7F77 /* PageCollectionLayout.swift */; };
 		345BF35821B9AD7600BE7F77 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345BF35721B9AD7500BE7F77 /* DetailViewController.swift */; };
-		345C9D6B21BF9DB6008ABB56 /* CoverTrasition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345C9D6A21BF9DB5008ABB56 /* CoverTrasition.swift */; };
+		345C9D6B21BF9DB6008ABB56 /* SharedElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345C9D6A21BF9DB5008ABB56 /* SharedElements.swift */; };
+		3464F7C821D69B34003FB77A /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464F7C721D69B34003FB77A /* Helpers.swift */; };
 		349E2F4421B10BA6007400B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E2F4321B10BA6007400B2 /* AppDelegate.swift */; };
 		349E2F4621B10BA6007400B2 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E2F4521B10BA6007400B2 /* IndexViewController.swift */; };
 		349E2F4921B10BA7007400B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349E2F4721B10BA7007400B2 /* Main.storyboard */; };
@@ -53,7 +54,8 @@
 		345BF35321B8736000BE7F77 /* CardGalleryLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGalleryLayout.swift; sourceTree = "<group>"; };
 		345BF35521B9902200BE7F77 /* PageCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionLayout.swift; sourceTree = "<group>"; };
 		345BF35721B9AD7500BE7F77 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		345C9D6A21BF9DB5008ABB56 /* CoverTrasition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverTrasition.swift; sourceTree = "<group>"; };
+		345C9D6A21BF9DB5008ABB56 /* SharedElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedElements.swift; sourceTree = "<group>"; };
+		3464F7C721D69B34003FB77A /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		349E2F4021B10BA6007400B2 /* GoodNightFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodNightFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349E2F4321B10BA6007400B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349E2F4521B10BA6007400B2 /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				345BF35B21B9B29C00BE7F77 /* transition */,
 				345BF33121B86B5C00BE7F77 /* layouts */,
 				345BF32821B83F8B00BE7F77 /* cells */,
+				3464F7C721D69B34003FB77A /* Helpers.swift */,
 			);
 			path = Componts;
 			sourceTree = "<group>";
@@ -167,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				34ADE84521BE50EE0025C430 /* ContextPopTransition.swift */,
-				345C9D6A21BF9DB5008ABB56 /* CoverTrasition.swift */,
+				345C9D6A21BF9DB5008ABB56 /* SharedElements.swift */,
 			);
 			path = transition;
 			sourceTree = "<group>";
@@ -365,11 +368,12 @@
 			files = (
 				345BF35621B9902200BE7F77 /* PageCollectionLayout.swift in Sources */,
 				345BF35221B8724C00BE7F77 /* CardStackLayout.swift in Sources */,
-				345C9D6B21BF9DB6008ABB56 /* CoverTrasition.swift in Sources */,
+				345C9D6B21BF9DB6008ABB56 /* SharedElements.swift in Sources */,
 				345BF35021B86DD600BE7F77 /* PinterestLayout.swift in Sources */,
 				349E2F4621B10BA6007400B2 /* IndexViewController.swift in Sources */,
 				345BF32B21B83FBF00BE7F77 /* CradCell.swift in Sources */,
 				345BF35421B8736000BE7F77 /* CardGalleryLayout.swift in Sources */,
+				3464F7C821D69B34003FB77A /* Helpers.swift in Sources */,
 				349E2F4421B10BA6007400B2 /* AppDelegate.swift in Sources */,
 				345BF35821B9AD7600BE7F77 /* DetailViewController.swift in Sources */,
 				342102A721BF598200A96B93 /* NavigationViewController.swift in Sources */,
