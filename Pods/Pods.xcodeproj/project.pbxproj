@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3775898CB9F4EBA1CB9F9343DA505957 /* Pods-GoodNightFMUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E0756B7210F59167392FC98EA824095 /* Pods-GoodNightFMUITests-dummy.m */; };
+		4A5178DA80BD1DF5C1C9AD5C10F0C11C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		5A56E4033D8660DE406336AC31C38377 /* Pods-GoodNightFM-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8DDD2D919506DD62E7933640F4AB04 /* Pods-GoodNightFM-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		608602F9E6339FDA76B3F61F1E668A37 /* Pods-GoodNightFMTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D3BBA169C59B99CE027CBBD618500D1 /* Pods-GoodNightFMTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83C5214E76BA02B3D0A57E8A98B57B94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+		A166CCE5B231A3969470C11D3D354381 /* Pods-GoodNightFM-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4196585530C3037DFF1E0930697F7586 /* Pods-GoodNightFM-dummy.m */; };
+		B2B011A00F9081AE80A2986EA0B93E3A /* Pods-GoodNightFMTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E6DC7B33CC3DBFB7C5701855DEEFB6 /* Pods-GoodNightFMTests-dummy.m */; };
+		EFB03E740D2000AAD97BFABB56C49BD2 /* Pods-GoodNightFMUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 252A59CA9E728752592DD8733A62F1AD /* Pods-GoodNightFMUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0590C92AE29893DD680014A989AC3B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0533C96996756953D3683FAE9AE633E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9815517109F56994A3506A0D4515604E;
+			remoteInfo = "Pods-GoodNightFM";
+		};
+		F8BC0FEAC74A0BBFE680B8D2E14CF54E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9815517109F56994A3506A0D4515604E;
+			remoteInfo = "Pods-GoodNightFM";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		186D93B2A8445287C811530DA3EA798E /* Pods-GoodNightFMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodNightFMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		252A59CA9E728752592DD8733A62F1AD /* Pods-GoodNightFMUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoodNightFMUITests-umbrella.h"; sourceTree = "<group>"; };
+		25C613D9CC5AD51EBE8D73B07AB9D097 /* Pods-GoodNightFM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodNightFM.debug.xcconfig"; sourceTree = "<group>"; };
+		266E025E24C48409627FCB5EF408FFFB /* Pods-GoodNightFMTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodNightFMTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2B4CF282AC0600E3F1F649C7B27EF4BB /* Pods-GoodNightFMUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodNightFMUITests-Info.plist"; sourceTree = "<group>"; };
+		2E09A665C0B099F941A5153542371639 /* Pods_GoodNightFM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GoodNightFM.framework; path = "Pods-GoodNightFM.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		346784775EA4162D8334B63AE910CCCC /* Pods-GoodNightFMUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoodNightFMUITests.modulemap"; sourceTree = "<group>"; };
+		4196585530C3037DFF1E0930697F7586 /* Pods-GoodNightFM-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoodNightFM-dummy.m"; sourceTree = "<group>"; };
+		4453341941CAD694ACEDA721F9853923 /* Pods-GoodNightFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodNightFM.release.xcconfig"; sourceTree = "<group>"; };
+		4CBFA9D4AA2E6950F91747FD21DC8E25 /* Pods-GoodNightFM-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodNightFM-Info.plist"; sourceTree = "<group>"; };
+		4EFEF2B782485A6AD208C0D4181CFA8E /* Pods-GoodNightFMTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoodNightFMTests.modulemap"; sourceTree = "<group>"; };
+		540B0EF2C8A53CAB543D0F7747605BD6 /* Pods-GoodNightFM-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoodNightFM-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5549DE88E4D634E7FD6DB3439402E058 /* Pods-GoodNightFMUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodNightFMUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		59AC35E9B138DD7FB85D27816EB55FAB /* Pods-GoodNightFMTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoodNightFMTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6449A6C6F7A0806D467AEAE18C8EE191 /* Pods-GoodNightFMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodNightFMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79E6DC7B33CC3DBFB7C5701855DEEFB6 /* Pods-GoodNightFMTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoodNightFMTests-dummy.m"; sourceTree = "<group>"; };
+		7B8DDD2D919506DD62E7933640F4AB04 /* Pods-GoodNightFM-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoodNightFM-umbrella.h"; sourceTree = "<group>"; };
+		822E38B810AB557A3980C571B508E140 /* Pods_GoodNightFMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GoodNightFMUITests.framework; path = "Pods-GoodNightFMUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3BBA169C59B99CE027CBBD618500D1 /* Pods-GoodNightFMTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GoodNightFMTests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E0756B7210F59167392FC98EA824095 /* Pods-GoodNightFMUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GoodNightFMUITests-dummy.m"; sourceTree = "<group>"; };
+		A78DC84C9DAB85E2A04366C5378776CC /* Pods-GoodNightFM-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodNightFM-acknowledgements.plist"; sourceTree = "<group>"; };
+		A9914336026DB8D8E14C326401B1D05F /* Pods-GoodNightFMUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GoodNightFMUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B11C3A7C7577550CF8AC1DCDEECAD160 /* Pods-GoodNightFMTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GoodNightFMTests-Info.plist"; sourceTree = "<group>"; };
+		B21DBB42F996213F8181D274DA17A24E /* Pods-GoodNightFMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodNightFMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD78B2DFE3FD187D6A8139150FE926BA /* Pods_GoodNightFMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_GoodNightFMTests.framework; path = "Pods-GoodNightFMTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E176D4995753CFCE987B3E784D176A65 /* Pods-GoodNightFMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GoodNightFMTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA5FDAD8F3E283240A4DF45D44ED1F7E /* Pods-GoodNightFM.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GoodNightFM.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01FD4C14AA0BC5F3BF2B0B976535BEEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5178DA80BD1DF5C1C9AD5C10F0C11C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D0F4B9860C75E5F0876A508B91E173C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C5214E76BA02B3D0A57E8A98B57B94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2C4E8645605F80661170DC33DE1F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0590C92AE29893DD680014A989AC3B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C89D20552123153214DEB05F0E18F2A /* Pods-GoodNightFMTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EFEF2B782485A6AD208C0D4181CFA8E /* Pods-GoodNightFMTests.modulemap */,
+				59AC35E9B138DD7FB85D27816EB55FAB /* Pods-GoodNightFMTests-acknowledgements.markdown */,
+				266E025E24C48409627FCB5EF408FFFB /* Pods-GoodNightFMTests-acknowledgements.plist */,
+				79E6DC7B33CC3DBFB7C5701855DEEFB6 /* Pods-GoodNightFMTests-dummy.m */,
+				B11C3A7C7577550CF8AC1DCDEECAD160 /* Pods-GoodNightFMTests-Info.plist */,
+				8D3BBA169C59B99CE027CBBD618500D1 /* Pods-GoodNightFMTests-umbrella.h */,
+				B21DBB42F996213F8181D274DA17A24E /* Pods-GoodNightFMTests.debug.xcconfig */,
+				E176D4995753CFCE987B3E784D176A65 /* Pods-GoodNightFMTests.release.xcconfig */,
+			);
+			name = "Pods-GoodNightFMTests";
+			path = "Target Support Files/Pods-GoodNightFMTests";
+			sourceTree = "<group>";
+		};
+		920524D6A5B453E90152824E1CAD9990 /* Pods-GoodNightFMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				346784775EA4162D8334B63AE910CCCC /* Pods-GoodNightFMUITests.modulemap */,
+				A9914336026DB8D8E14C326401B1D05F /* Pods-GoodNightFMUITests-acknowledgements.markdown */,
+				5549DE88E4D634E7FD6DB3439402E058 /* Pods-GoodNightFMUITests-acknowledgements.plist */,
+				9E0756B7210F59167392FC98EA824095 /* Pods-GoodNightFMUITests-dummy.m */,
+				2B4CF282AC0600E3F1F649C7B27EF4BB /* Pods-GoodNightFMUITests-Info.plist */,
+				252A59CA9E728752592DD8733A62F1AD /* Pods-GoodNightFMUITests-umbrella.h */,
+				186D93B2A8445287C811530DA3EA798E /* Pods-GoodNightFMUITests.debug.xcconfig */,
+				6449A6C6F7A0806D467AEAE18C8EE191 /* Pods-GoodNightFMUITests.release.xcconfig */,
+			);
+			name = "Pods-GoodNightFMUITests";
+			path = "Target Support Files/Pods-GoodNightFMUITests";
+			sourceTree = "<group>";
+		};
+		9B055D0CFEA43187E72B03DED11F5662 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A47D86DE3CD0A6A9F4D5D34E19E2FCDE /* Pods-GoodNightFM */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FDAD8F3E283240A4DF45D44ED1F7E /* Pods-GoodNightFM.modulemap */,
+				540B0EF2C8A53CAB543D0F7747605BD6 /* Pods-GoodNightFM-acknowledgements.markdown */,
+				A78DC84C9DAB85E2A04366C5378776CC /* Pods-GoodNightFM-acknowledgements.plist */,
+				4196585530C3037DFF1E0930697F7586 /* Pods-GoodNightFM-dummy.m */,
+				4CBFA9D4AA2E6950F91747FD21DC8E25 /* Pods-GoodNightFM-Info.plist */,
+				7B8DDD2D919506DD62E7933640F4AB04 /* Pods-GoodNightFM-umbrella.h */,
+				25C613D9CC5AD51EBE8D73B07AB9D097 /* Pods-GoodNightFM.debug.xcconfig */,
+				4453341941CAD694ACEDA721F9853923 /* Pods-GoodNightFM.release.xcconfig */,
+			);
+			name = "Pods-GoodNightFM";
+			path = "Target Support Files/Pods-GoodNightFM";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E3AF03B2B16A6A29073BD30AAA8C5314 /* Products */,
+				F62A3127530E9EF3C33D51F92127D363 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B055D0CFEA43187E72B03DED11F5662 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3AF03B2B16A6A29073BD30AAA8C5314 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E09A665C0B099F941A5153542371639 /* Pods_GoodNightFM.framework */,
+				BD78B2DFE3FD187D6A8139150FE926BA /* Pods_GoodNightFMTests.framework */,
+				822E38B810AB557A3980C571B508E140 /* Pods_GoodNightFMUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F62A3127530E9EF3C33D51F92127D363 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A47D86DE3CD0A6A9F4D5D34E19E2FCDE /* Pods-GoodNightFM */,
+				8C89D20552123153214DEB05F0E18F2A /* Pods-GoodNightFMTests */,
+				920524D6A5B453E90152824E1CAD9990 /* Pods-GoodNightFMUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		44A52F672BB9B3263687D3F3D688E4A5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB03E740D2000AAD97BFABB56C49BD2 /* Pods-GoodNightFMUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A66F893D9D63F95D07F4E8F023858552 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A56E4033D8660DE406336AC31C38377 /* Pods-GoodNightFM-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F02D82B9F4E21388BB57C74910A3CA47 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				608602F9E6339FDA76B3F61F1E668A37 /* Pods-GoodNightFMTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D7DE16D93C8F349416B1ED300326D78 /* Pods-GoodNightFMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B5ACBEF4FEF8774D2ADFB83DB2C6666 /* Build configuration list for PBXNativeTarget "Pods-GoodNightFMUITests" */;
+			buildPhases = (
+				44A52F672BB9B3263687D3F3D688E4A5 /* Headers */,
+				90EE3AF98CDB15C0EED5A91450FF066A /* Sources */,
+				9D2C4E8645605F80661170DC33DE1F79 /* Frameworks */,
+				9540B9BFC91E51F069EB72AD47486B0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E15059DAAD94503D8E91CAF4948C375 /* PBXTargetDependency */,
+			);
+			name = "Pods-GoodNightFMUITests";
+			productName = "Pods-GoodNightFMUITests";
+			productReference = 822E38B810AB557A3980C571B508E140 /* Pods_GoodNightFMUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9815517109F56994A3506A0D4515604E /* Pods-GoodNightFM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03302BF2A095ACC5BE2C1A444774FAC0 /* Build configuration list for PBXNativeTarget "Pods-GoodNightFM" */;
+			buildPhases = (
+				A66F893D9D63F95D07F4E8F023858552 /* Headers */,
+				9E01639C2A82169970547479B8A244FF /* Sources */,
+				1D0F4B9860C75E5F0876A508B91E173C /* Frameworks */,
+				1D58447E01FA476AE213663E26A09A0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GoodNightFM";
+			productName = "Pods-GoodNightFM";
+			productReference = 2E09A665C0B099F941A5153542371639 /* Pods_GoodNightFM.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E0F12BDF90225B499E770ACF1114BEC2 /* Pods-GoodNightFMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C4FEE1D9FF4DFDF92441D77AD74CC48 /* Build configuration list for PBXNativeTarget "Pods-GoodNightFMTests" */;
+			buildPhases = (
+				F02D82B9F4E21388BB57C74910A3CA47 /* Headers */,
+				8C58F52F74D022685BF36E02561F4A6E /* Sources */,
+				01FD4C14AA0BC5F3BF2B0B976535BEEF /* Frameworks */,
+				135E2BDD9A2FDB62C4B6633EF93D1CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A119C3E10C654F98500141F390D3DF4 /* PBXTargetDependency */,
+			);
+			name = "Pods-GoodNightFMTests";
+			productName = "Pods-GoodNightFMTests";
+			productReference = BD78B2DFE3FD187D6A8139150FE926BA /* Pods_GoodNightFMTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = E3AF03B2B16A6A29073BD30AAA8C5314 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9815517109F56994A3506A0D4515604E /* Pods-GoodNightFM */,
+				E0F12BDF90225B499E770ACF1114BEC2 /* Pods-GoodNightFMTests */,
+				5D7DE16D93C8F349416B1ED300326D78 /* Pods-GoodNightFMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		135E2BDD9A2FDB62C4B6633EF93D1CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D58447E01FA476AE213663E26A09A0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9540B9BFC91E51F069EB72AD47486B0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C58F52F74D022685BF36E02561F4A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B011A00F9081AE80A2986EA0B93E3A /* Pods-GoodNightFMTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90EE3AF98CDB15C0EED5A91450FF066A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3775898CB9F4EBA1CB9F9343DA505957 /* Pods-GoodNightFMUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E01639C2A82169970547479B8A244FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A166CCE5B231A3969470C11D3D354381 /* Pods-GoodNightFM-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E15059DAAD94503D8E91CAF4948C375 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GoodNightFM";
+			target = 9815517109F56994A3506A0D4515604E /* Pods-GoodNightFM */;
+			targetProxy = F8BC0FEAC74A0BBFE680B8D2E14CF54E /* PBXContainerItemProxy */;
+		};
+		9A119C3E10C654F98500141F390D3DF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GoodNightFM";
+			target = 9815517109F56994A3506A0D4515604E /* Pods-GoodNightFM */;
+			targetProxy = 0533C96996756953D3683FAE9AE633E7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07488D4657FB0A78086563621D425F8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		396BAD01E47C97F6EF36DC034E130EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E176D4995753CFCE987B3E784D176A65 /* Pods-GoodNightFMTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodNightFMTests/Pods-GoodNightFMTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodNightFMTests/Pods-GoodNightFMTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3A429A647DB2A47557D054A4E9559CD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C613D9CC5AD51EBE8D73B07AB9D097 /* Pods-GoodNightFM.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodNightFM/Pods-GoodNightFM-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodNightFM/Pods-GoodNightFM.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3F07D44D7646894B91FC66E4880203F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21DBB42F996213F8181D274DA17A24E /* Pods-GoodNightFMTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodNightFMTests/Pods-GoodNightFMTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodNightFMTests/Pods-GoodNightFMTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7C82792E1466F33D7DFC1D02AE332A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 186D93B2A8445287C811530DA3EA798E /* Pods-GoodNightFMUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodNightFMUITests/Pods-GoodNightFMUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodNightFMUITests/Pods-GoodNightFMUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9DE93BA632057F3471D9AFDC5D1F0FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4453341941CAD694ACEDA721F9853923 /* Pods-GoodNightFM.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodNightFM/Pods-GoodNightFM-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodNightFM/Pods-GoodNightFM.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A1962E6FF39BBAC201A2E5DDF99557DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FB7808169177D897D9261A084DDE048D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6449A6C6F7A0806D467AEAE18C8EE191 /* Pods-GoodNightFMUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GoodNightFMUITests/Pods-GoodNightFMUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GoodNightFMUITests/Pods-GoodNightFMUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03302BF2A095ACC5BE2C1A444774FAC0 /* Build configuration list for PBXNativeTarget "Pods-GoodNightFM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A429A647DB2A47557D054A4E9559CD5 /* Debug */,
+				9DE93BA632057F3471D9AFDC5D1F0FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C4FEE1D9FF4DFDF92441D77AD74CC48 /* Build configuration list for PBXNativeTarget "Pods-GoodNightFMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F07D44D7646894B91FC66E4880203F2 /* Debug */,
+				396BAD01E47C97F6EF36DC034E130EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07488D4657FB0A78086563621D425F8A /* Debug */,
+				A1962E6FF39BBAC201A2E5DDF99557DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B5ACBEF4FEF8774D2ADFB83DB2C6666 /* Build configuration list for PBXNativeTarget "Pods-GoodNightFMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C82792E1466F33D7DFC1D02AE332A4F /* Debug */,
+				FB7808169177D897D9261A084DDE048D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

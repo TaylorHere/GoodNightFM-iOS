@@ -48,6 +48,7 @@ extension IndexViewController {
 
 // UICollectionViewDelegate
 extension IndexViewController {
+
      func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize{
@@ -87,6 +88,8 @@ extension IndexViewController: UINavigationControllerDelegate {
         switch operation {
         case .push:
             return SharedElements(duration: 3, isPresenting: true, originFrame: self.selectedFrame!, cell: selectedCell!)
+        case .pop:
+            return SharedElements(duration: 3, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
         default:
             return SharedElements(duration: 3, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
         }

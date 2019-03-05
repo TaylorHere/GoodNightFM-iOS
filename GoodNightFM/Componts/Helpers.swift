@@ -19,8 +19,6 @@ extension UIView
             print("err when copy views: \(error)")
         }
         let view = UIView()
-        view.layer.borderWidth = 2
-        view.layer.borderColor = UIColor.red.cgColor
         return view as? T
     }
 }

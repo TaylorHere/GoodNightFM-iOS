@@ -42,116 +42,6 @@ class SharedElements : NSObject, UIViewControllerAnimatedTransitioning {
         self.cell = cell
     }
     
-//    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-//        let container = transitionContext.containerView
-//
-//        guard let fromViewController = transitionContext.viewController(forKey: .from) else {return}
-//        guard let toViewController = transitionContext.viewController(forKey: .to) else {return}
-//
-//        guard let fromView = transitionContext.view(forKey: .from) else { return }
-//        guard let toView = transitionContext.view(forKey: .to) else { return }
-//
-//        self.isPresenting ? container.addSubview(toView) : container.insertSubview(toView, belowSubview: fromView)
-//
-//        let detailViewContoller: DetailViewController = (isPresenting ? toViewController : fromViewController) as! DetailViewController
-//        self.offsetHeight = (detailViewContoller.navigationController?.navigationBar.frame.origin.y)! + (detailViewContoller.navigationController?.navigationBar.frame.height)!
-//        let detailView = isPresenting ? toView : fromView
-//
-//        let detailViewCover = detailViewContoller.cover
-//        let detailViewTitle = detailViewContoller._title
-//        let detailViewSubitle = detailViewContoller.subtitle
-//        let detailViewControlButton = detailViewContoller.controllButton
-//
-//        detailViewCover?.image = cell.cover.image
-//        detailViewCover?.alpha = 0
-//        detailViewTitle?.alpha = 0
-//        detailViewSubitle?.alpha = 0
-//        detailViewControlButton?.alpha = 0
-//
-//
-//
-//        let originToViewFrame = toView.frame
-//        toView.frame = isPresenting ? self.originFrame : toView.frame
-//        toView.alpha = isPresenting ? 0 : 1
-//        toView.layoutIfNeeded()
-////
-//        if self.isPresenting {
-//            cell.alpha = 0
-//            let transitionImageView = UIImageView(frame: convertFrameToOriginFrame(frame: cell.cover.frame))
-//            let transitionTitleView = UILabel(frame: convertFrameToOriginFrame(frame: cell.title.frame))
-//            let transitionSubtitleView = UILabel(frame: convertFrameToOriginFrame(frame: cell.subtitle.frame))
-//            let transitionControlButtonView = UIImageView(frame: convertFrameToOriginFrame(frame: cell.controlButton.frame))
-//
-//            transitionImageView.image = cell.cover.image
-//            transitionTitleView.text = cell.title.text
-//            transitionSubtitleView.text = cell.subtitle.text
-//            transitionControlButtonView.image = cell.controlButton.image
-//
-//            container.addSubview(transitionImageView)
-//            container.addSubview(transitionTitleView)
-//            container.addSubview(transitionSubtitleView)
-//            container.addSubview(transitionControlButtonView)
-//
-//            UIView.animate(withDuration: duration, animations: {
-//                toView.frame = originToViewFrame
-//                toView.alpha = 1
-//                transitionImageView.frame = self.convertFrameByOffset(frame: detailViewCover!.frame)
-//                transitionTitleView.frame = self.convertFrameByOffset(frame:detailViewTitle!.frame)
-//                transitionSubtitleView.frame = self.convertFrameByOffset(frame:detailViewSubitle!.frame)
-//                transitionControlButtonView.frame = self.convertFrameByOffset(frame:detailViewControlButton!.frame)
-//
-//            }, completion: { (finished) in
-//                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-//                transitionImageView.removeFromSuperview()
-//                transitionImageView.removeFromSuperview()
-//                transitionTitleView.removeFromSuperview()
-//                transitionSubtitleView.removeFromSuperview()
-//                transitionControlButtonView.removeFromSuperview()
-//                detailViewCover?.alpha = 1
-//                detailViewTitle?.alpha = 1
-//                detailViewSubitle?.alpha = 1
-//                detailViewControlButton?.alpha = 1
-//            })
-//        } else {
-//            let transitionImageView = UIImageView(frame: self.convertFrameByOffset(frame: detailViewCover!.frame))
-//            let transitionTitleView = UILabel(frame: self.convertFrameByOffset(frame:detailViewTitle!.frame))
-//            let transitionSubtitleView = UILabel(frame: self.convertFrameByOffset(frame:detailViewSubitle!.frame))
-//            let transitionControlButtonView = UIImageView(frame: self.convertFrameByOffset(frame:detailViewControlButton!.frame))
-//
-//            transitionImageView.image = cell.cover.image
-//            transitionTitleView.text = cell.title.text
-//            transitionSubtitleView.text = cell.subtitle.text
-//            transitionControlButtonView.image = cell.controlButton.image
-//
-//            container.addSubview(transitionImageView)
-//            container.addSubview(transitionTitleView)
-//            container.addSubview(transitionSubtitleView)
-//            container.addSubview(transitionControlButtonView)
-//
-//            UIView.animate(withDuration: duration, animations: {
-//                transitionImageView.frame =  self.convertFrameToOriginFrame(frame: self.cell.cover.frame)
-//                transitionTitleView.frame =  self.convertFrameToOriginFrame(frame: self.cell.title.frame)
-//                transitionSubtitleView.frame =  self.convertFrameToOriginFrame(frame: self.cell.subtitle.frame)
-//                transitionControlButtonView.frame = self.convertFrameToOriginFrame(frame: self.cell.controlButton.frame)
-//                detailView.frame = self.originFrame
-//                detailView.alpha =  0
-//            }, completion: { (finished) in
-//                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-//                transitionImageView.removeFromSuperview()
-//                transitionImageView.removeFromSuperview()
-//                transitionTitleView.removeFromSuperview()
-//                transitionSubtitleView.removeFromSuperview()
-//                transitionControlButtonView.removeFromSuperview()
-//                detailViewCover?.alpha = 1
-//                detailViewTitle?.alpha = 1
-//                detailViewSubitle?.alpha = 1
-//                detailViewControlButton?.alpha = 1
-//                self.cell.alpha = 1
-//            })
-//        }
-//
-//    }
-    
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return duration
     }
@@ -177,7 +67,9 @@ class SharedElements : NSObject, UIViewControllerAnimatedTransitioning {
         }else{
             aView = isPresenting ? fromView : toView
         }
+
         bView = isPresenting ? toView : fromView
+
         self.findElements(aView: aView!, bView: bView!)
         let transitionElements = self.createTransitionView()
         for transitionElement in transitionElements{
@@ -192,28 +84,24 @@ class SharedElements : NSObject, UIViewControllerAnimatedTransitioning {
 // animation flows
 extension SharedElements {
 
-    func flattenElements(aView: UIView, bView: UIView) -> ([UIView], [UIView]) {
-        var aElements: [UIView] = []
-        var bElements: [UIView] = []
+    func flattenElements(treeView: UIView) -> [UIView] {
+        var Elements: [UIView] = []
+        
 
-        if !aElements.contains(aView) {
-            aElements.append(aView)
+        if !Elements.contains(treeView) {
+            Elements.append(treeView)
         }
-        if !bElements.contains(bView) {
-            bElements.append(bView)
+    
+        for subview in treeView.subviews {
+            let subElements = flattenElements(treeView: subview)
+            Elements.append(contentsOf: subElements)
         }
-        for aSubview in aView.subviews {
-            for bSubview in bView.subviews {
-                let (aSubElements, bSubElements) = flattenElements(aView: aSubview, bView: bSubview)
-                aElements.append(contentsOf: aSubElements)
-                bElements.append(contentsOf: bSubElements)
-            }
-        }
-        return (aElements, bElements)
+        return Elements
     }
     
     func findElements(aView: UIView, bView: UIView) {
-        let (aElements, bElements) = self.flattenElements(aView: aView, bView: bView)
+        let aElements = self.flattenElements(treeView: aView)
+        let bElements = self.flattenElements(treeView: bView)
         for aElement in aElements{
             for bElement in bElements{
                 if aElement != bElement{
@@ -231,13 +119,16 @@ extension SharedElements {
         var transitionElements: [UIView] = []
         for (aView, bView) in self.elementsPatterns {
             let trasitionElement = aView.copyView()
+            //test code.
+            trasitionElement?.layer.borderWidth = 2
+            trasitionElement?.layer.borderColor = UIColor.red.cgColor
             if isPresenting {
                 trasitionElement!.frame = convertFrameToOriginFrame(frame: aView.frame)
                 let toFrame = convertFrameByOffset(frame: bView.frame)
                 self.trasitionElementsPatterns.updateValue(toFrame, forKey: trasitionElement!)
             }else{
-                trasitionElement!.frame = convertFrameToOriginFrame(frame: bView.frame)
-                let toFrame = convertFrameByOffset(frame: aView.frame)
+                trasitionElement!.frame = convertFrameByOffset(frame: bView.frame)
+                let toFrame = convertFrameToOriginFrame(frame: aView.frame)
                 self.trasitionElementsPatterns.updateValue(toFrame, forKey: trasitionElement!)
             }
             transitionElements.append(trasitionElement!)
@@ -246,15 +137,16 @@ extension SharedElements {
     }
     
     func animationFrame(transitionContext:UIViewControllerContextTransitioning ) {
+
         guard let toView = transitionContext.view(forKey: .to) else { return }
         let originToViewFrame = toView.frame
         toView.frame = isPresenting ? self.originFrame : toView.frame
-        toView.alpha = isPresenting ? 0 : 1
+        toView.alpha = 0
         toView.layoutIfNeeded()
         
         guard let fromView = transitionContext.view(forKey: .from) else { return }
-        fromView.frame = isPresenting ? toView.frame : self.originFrame
-        fromView.alpha = isPresenting ? 1 : 0
+        fromView.frame = isPresenting ? toView.frame : fromView.frame
+        fromView.alpha = 1
         fromView.layoutIfNeeded()
 
         
@@ -263,7 +155,8 @@ extension SharedElements {
                 trasitionElement.frame = toFrame
             }
             toView.frame = originToViewFrame
-            toView.alpha = self.isPresenting ? 1 : 0
+            toView.alpha = 1
+            fromView.alpha = 0
         }, completion: { (finished) in
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             for trasitionElement in self.trasitionElementsPatterns.keys {

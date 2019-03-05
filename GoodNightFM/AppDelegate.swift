@@ -24,6 +24,6 @@ extension AppDelegate {
     func setupNavigationTabBar() {
         //set Title Color here.
         let navigationBarAppearace = UINavigationBar.appearance()
-        navigationBarAppearace.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "offWhite")!]
+        navigationBarAppearace.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(named: "alittleWhite")!]
     }
 }
