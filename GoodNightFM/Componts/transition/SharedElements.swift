@@ -119,6 +119,7 @@ extension SharedElements {
         var transitionElements: [UIView] = []
         for (aView, bView) in self.elementsPatterns {
             let trasitionElement = aView.copyView()
+            trasitionElement?.bringSubviewToFront(trasitionElement as! UIView)
             //test code.
             trasitionElement?.layer.borderWidth = 2
             trasitionElement?.layer.borderColor = UIColor.red.cgColor
@@ -155,13 +156,14 @@ extension SharedElements {
                 trasitionElement.frame = toFrame
             }
             toView.frame = originToViewFrame
-            toView.alpha = 1
-            fromView.alpha = 0
+
         }, completion: { (finished) in
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             for trasitionElement in self.trasitionElementsPatterns.keys {
                 trasitionElement.removeFromSuperview()
             }
+            toView.alpha = 1
+            fromView.alpha = 0
         })
         
         

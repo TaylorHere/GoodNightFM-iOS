@@ -12,13 +12,14 @@ import UIKit
 extension UIView
 {
     func copyView<T:UIView>() -> T? {
-        do {
-            let data = try NSKeyedArchiver.archivedData(withRootObject:self, requiringSecureCoding:false)
-            return try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? T
-        } catch {
-            print("err when copy views: \(error)")
-        }
-        let view = UIView()
+//        do {
+//            let data = try NSKeyedArchiver.archivedData(withRootObject:self, requiringSecureCoding:false)
+//            return try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? T
+//        } catch {
+//            print("err when copy views: \(error)")
+//        }
+//        let view = UIView()
+        let view = self.snapshotView(afterScreenUpdates: false)
         return view as? T
     }
 }
