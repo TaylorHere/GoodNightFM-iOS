@@ -20,6 +20,7 @@ extension UIView
 //        }
 //        let view = UIView()
         let view = self.snapshotView(afterScreenUpdates: false)
+        view?.bringSubviewToFront(view as! UIView)
         return view as? T
     }
 }
