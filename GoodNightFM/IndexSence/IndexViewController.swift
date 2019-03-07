@@ -88,19 +88,11 @@ extension IndexViewController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         switch operation {
         case .push:
-<<<<<<< HEAD
             return SharedElements(duration: 0.4, isPresenting: true, originFrame: self.selectedFrame!, cell: selectedCell!)
         case .pop:
             return SharedElements(duration: 0.4, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
         default:
             return SharedElements(duration: 0.4, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
-=======
-            return SharedElements(duration: 0.3, isPresenting: true, originFrame: self.selectedFrame!, cell: selectedCell!)
-        case .pop:
-            return SharedElements(duration: 0.3, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
-        default:
-            return SharedElements(duration: 0.3, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
->>>>>>> 完善alpha过程，遗留问题：snapview render层级问题
         }
     }
     
