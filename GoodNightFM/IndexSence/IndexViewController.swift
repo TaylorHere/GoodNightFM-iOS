@@ -73,9 +73,18 @@ extension IndexViewController {
 
 }
 
-//// PinteresLayoutDelegate
-//extension IndexViewController: PinterestLayoutDelegate {
-//    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-//        return 400
-//    }
-//}
+// NavigationControllerDelegate to apply our Transition.
+extension IndexViewController: UINavigationControllerDelegate {
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        switch operation {
+        case .push:
+            return SharedElements(duration: 0.4, isPresenting: true, originFrame: self.selectedFrame!, cell: selectedCell!)
+        case .pop:
+            return SharedElements(duration: 0.4, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
+        default:
+            return SharedElements(duration: 0.4, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
+        }
+    }
+    
+}
