@@ -61,7 +61,9 @@ extension IndexViewController {
         let theAttributes:UICollectionViewLayoutAttributes! = collectionView.layoutAttributesForItem(at: indexPath)
         self.selectedFrame = collectionView.convert(theAttributes.frame, to: collectionView.superview!.superview)
         self.selectedCell = collectionView.cellForItem(at: indexPath) as! CradCell
+//        super.collectionView(collectionView, didSelectItemAt: indexPath)
         self.navigationController?.pushViewController(toViewController, animated: true)
+        
     }
 
 }
@@ -72,7 +74,6 @@ extension IndexViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CradCell.self), for: indexPath)
-
     }
 
 
@@ -82,16 +83,17 @@ extension IndexViewController {
 
 }
 
+// NavigationControllerDelegate to apply our Transition.
 extension IndexViewController: UINavigationControllerDelegate {
     
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         switch operation {
         case .push:
-            return SharedElements(duration: 0.3, isPresenting: true, originFrame: self.selectedFrame!, cell: selectedCell!)
+            return SharedElements(duration: 0.4, isPresenting: true, originFrame: self.selectedFrame!, cell: selectedCell!)
         case .pop:
-            return SharedElements(duration: 0.3, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
+            return SharedElements(duration: 0.4, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
         default:
-            return SharedElements(duration: 0.3, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
+            return SharedElements(duration: 0.4, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
         }
     }
     

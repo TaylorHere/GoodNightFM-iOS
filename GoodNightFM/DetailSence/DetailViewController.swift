@@ -17,7 +17,21 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        setZpotions()
     }
 
 
 }
+
+extension DetailViewController {
+    
+    func setZpotions() {
+        self.cover.layer.zPosition = 0
+        self.subtitle.layer.zPosition = 1
+        self._title.layer.zPosition = 2
+        self.controllButton.layer.zPosition = 3
+    }
+    
+}
+
+

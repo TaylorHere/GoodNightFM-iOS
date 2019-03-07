@@ -29,13 +29,13 @@ class SharedElements : NSObject, UIViewControllerAnimatedTransitioning {
     var duration : TimeInterval
     var isPresenting : Bool
     var originFrame : CGRect
-    var cell : CradCell
+    var cell : UICollectionViewCell
     public let CustomAnimatorTag = 99
     var elementsPatterns: [UIView: UIView] = [:]
     var trasitionElementsPatterns: [UIView: CGRect] = [:]
     var offsetHeight : CGFloat = 40
     
-    init(duration : TimeInterval, isPresenting : Bool, originFrame : CGRect, cell : CradCell) {
+    init(duration : TimeInterval, isPresenting : Bool, originFrame : CGRect, cell : UICollectionViewCell) {
         self.duration = duration
         self.isPresenting = isPresenting
         self.originFrame = originFrame
@@ -118,7 +118,7 @@ extension SharedElements {
     func createTransitionView() -> [UIView] {
         var transitionElements: [UIView] = []
         for (aView, bView) in self.elementsPatterns {
-            let trasitionElement = aView.copyView()
+            let trasitionElement = isPresenting ? aView.copyView() : bView.copyView()
             aView.alpha = 0
             bView.alpha = 0
             if isPresenting {
@@ -142,7 +142,7 @@ extension SharedElements {
         toView.frame = isPresenting ? self.originFrame : toView.frame
         toView.alpha = 0
         toView.layoutIfNeeded()
-        
+
         guard let fromView = transitionContext.view(forKey: .from) else { return }
         fromView.frame = isPresenting ? toView.frame : fromView.frame
         fromView.alpha = 1

@@ -17,7 +17,8 @@ class CradCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-         setCardShape()
+        setCardShape()
+        setZpotions()
     }
 
 }
@@ -36,6 +37,13 @@ extension CradCell {
         self.layer.shadowOpacity = 1.0
         self.layer.masksToBounds = false
 //        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: self.contentView.layer.cornerRadius).cgPath
+    }
+    
+    func setZpotions() {
+        self.cover.layer.zPosition = 0
+        self.subtitle.layer.zPosition = 1
+        self.title.layer.zPosition = 2
+        self.controlButton.layer.zPosition = 3
     }
     
 }
