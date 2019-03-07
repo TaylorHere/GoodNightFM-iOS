@@ -60,8 +60,7 @@ extension IndexViewController {
         let toViewController = mainStoryboard.instantiateViewController(withIdentifier: String(describing: DetailViewController.self))
         let theAttributes:UICollectionViewLayoutAttributes! = collectionView.layoutAttributesForItem(at: indexPath)
         self.selectedFrame = collectionView.convert(theAttributes.frame, to: collectionView.superview!.superview)
-        self.selectedCell = collectionView.cellForItem(at: indexPath) as! CradCell
-//        super.collectionView(collectionView, didSelectItemAt: indexPath)
+        self.selectedCell = collectionView.cellForItem(at: indexPath) as? CradCell
         self.navigationController?.pushViewController(toViewController, animated: true)
         
     }
@@ -89,11 +88,19 @@ extension IndexViewController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         switch operation {
         case .push:
+<<<<<<< HEAD
             return SharedElements(duration: 0.4, isPresenting: true, originFrame: self.selectedFrame!, cell: selectedCell!)
         case .pop:
             return SharedElements(duration: 0.4, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
         default:
             return SharedElements(duration: 0.4, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
+=======
+            return SharedElements(duration: 0.3, isPresenting: true, originFrame: self.selectedFrame!, cell: selectedCell!)
+        case .pop:
+            return SharedElements(duration: 0.3, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
+        default:
+            return SharedElements(duration: 0.3, isPresenting: false, originFrame: self.selectedFrame!, cell: selectedCell!)
+>>>>>>> 完善alpha过程，遗留问题：snapview render层级问题
         }
     }
     

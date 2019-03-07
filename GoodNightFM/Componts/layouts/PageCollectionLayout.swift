@@ -96,8 +96,9 @@ extension PageCollectionLayout {
         return CGPoint(x: newOffsetX, y: proposedContentOffset.y)
     }
     
-    override func shouldInvalidateLayout(forBoundsChange _: CGRect) -> Bool {
-        return true
+    override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
+        guard let collectionView = collectionView else { return false }
+        return newBounds.size.equalTo(collectionView.bounds.size)
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
