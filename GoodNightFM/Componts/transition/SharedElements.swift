@@ -28,14 +28,13 @@ import UIKit
 class SharedElements : NSObject, UIViewControllerAnimatedTransitioning {
     var duration : TimeInterval
     var isPresenting : Bool
-    var originFrame : CGRect
-    var cell : UICollectionViewCell
-    public let CustomAnimatorTag = 99
+    var originFrame : CGRect?
+    var cell : UICollectionViewCell?
     var elementsPatterns: [UIView: UIView] = [:]
     var trasitionElementsPatterns: [UIView: CGRect] = [:]
     var offsetHeight : CGFloat = 40
-    
-    init(duration : TimeInterval, isPresenting : Bool, originFrame : CGRect, cell : UICollectionViewCell) {
+
+    init(duration : TimeInterval, isPresenting : Bool, originFrame : CGRect?, cell : UICollectionViewCell?) {
         self.duration = duration
         self.isPresenting = isPresenting
         self.originFrame = originFrame
@@ -47,9 +46,14 @@ class SharedElements : NSObject, UIViewControllerAnimatedTransitioning {
     }
 
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        let container = transitionContext.containerView
+        
+        if self.originFrame == nil || self.cell == nil {
+            return
+        }
+        self.elementsPatterns = [:]
+        self.trasitionElementsPatterns = [:]
 
-        guard let fromViewController = transitionContext.viewController(forKey: .from) else {return}
+        let container = transitionContext.containerView
         guard let toViewController = transitionContext.viewController(forKey: .to) else {return}
 
         guard let fromView = transitionContext.view(forKey: .from) else { return }
@@ -73,9 +77,13 @@ class SharedElements : NSObject, UIViewControllerAnimatedTransitioning {
         self.findElements(aView: aView!, bView: bView!)
         let transitionElements = self.createTransitionView()
         for transitionElement in transitionElements{
+//            //test code
+//            transitionElement.layer.borderColor = UIColor.red.cgColor
+//            transitionElement.layer.borderWidth = 2
             container.addSubview(transitionElement)
         }
         self.animationFrame(transitionContext: transitionContext)
+
     }
 }
 
@@ -93,6 +101,10 @@ extension SharedElements {
         }
     
         for subview in treeView.subviews {
+            //if subview is a UICollection view, we ignore that.
+            if subview is UICollectionView{
+                continue
+            }
             let subElements = flattenElements(treeView: subview)
             Elements.append(contentsOf: subElements)
         }
@@ -104,12 +116,8 @@ extension SharedElements {
         let bElements = self.flattenElements(treeView: bView)
         for aElement in aElements{
             for bElement in bElements{
-                if aElement != bElement{
-                    if aElement.tag != 0 || bElement.tag != 0 {
-                        if aElement.tag == bElement.tag {
-                            self.elementsPatterns.updateValue(bElement, forKey: aElement)
-                        }
-                    }
+                if aElement.tag != 0 && bElement.tag != 0 && aElement.tag == bElement.tag {
+                    self.elementsPatterns.updateValue(bElement, forKey: aElement)
                 }
             }
         }
@@ -139,12 +147,11 @@ extension SharedElements {
 
         guard let toView = transitionContext.view(forKey: .to) else { return }
         let originToViewFrame = toView.frame
-        toView.frame = isPresenting ? self.originFrame : toView.frame
+        toView.frame = isPresenting ? self.originFrame ?? toView.frame : toView.frame
         toView.alpha = 0
         toView.layoutIfNeeded()
 
         guard let fromView = transitionContext.view(forKey: .from) else { return }
-        fromView.frame = isPresenting ? toView.frame : fromView.frame
         fromView.alpha = 1
         fromView.layoutIfNeeded()
 
@@ -175,7 +182,7 @@ extension SharedElements {
 extension SharedElements {
     
     func convertFrameToOriginFrame(frame: CGRect) -> CGRect {
-        let newFrame = CGRect(x: self.originFrame.origin.x + frame.origin.x, y: self.originFrame.origin.y + frame.origin.y, width: frame.width, height: frame.height)
+        let newFrame = CGRect(x: self.originFrame!.origin.x + frame.origin.x, y: self.originFrame!.origin.y + frame.origin.y, width: frame.width, height: frame.height)
         return newFrame
     }
     
@@ -185,5 +192,9 @@ extension SharedElements {
     }
 }
 
-
+protocol ShareElementsDelegate {
+    
+    // decide if tow view is shareable
+    func shareElements(aView: UIView, bView: UIView) -> Bool
+}
 

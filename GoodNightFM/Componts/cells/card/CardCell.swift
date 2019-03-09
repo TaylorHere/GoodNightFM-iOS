@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CradCell: UICollectionViewCell {
+class CardCell: UICollectionViewCell {
 
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var subtitle: UILabel!
@@ -24,7 +24,7 @@ class CradCell: UICollectionViewCell {
 }
 
 // Helpers
-extension CradCell {
+extension CardCell {
     
     func setCardShape() {
         self.contentView.layer.cornerRadius = 8.0

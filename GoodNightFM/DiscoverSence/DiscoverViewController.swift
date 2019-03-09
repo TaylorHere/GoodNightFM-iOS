@@ -1,50 +1,52 @@
 //
-//  ViewController.swift
+//  DiscoverViewController.swift
 //  GoodNightFM
 //
-//  Created by 李彦宏 on 2018/11/30.
-//  Copyright © 2018 李彦宏. All rights reserved.
+//  Created by taylor on 2019/3/9.
+//  Copyright © 2019 李彦宏. All rights reserved.
 //
 
 import UIKit
 
-class IndexViewController: SharedElementViewController {
+class DiscoverViewController: SharedElementViewController {
 
     @IBOutlet var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupLayout()
+//        setupLayout()
         setupAppearance()
         registerCell()
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
         
     }
-
+    
 }
 
 // Helpers Functions
-extension IndexViewController {
-
+extension DiscoverViewController {
+    
     func setupAppearance() {
         self.collectionView.backgroundColor = UIColor(named: "dark")
     }
-
+    
     func setupLayout() {
         self.collectionView.collectionViewLayout = PageCollectionLayout(itemSize: CGSize(width: 280, height: 400))
         self.collectionView.showsHorizontalScrollIndicator = false
     }
-
+    
     func registerCell() {
-        let nib = UINib(nibName: String(describing: CardCell.self), bundle: nil)
-        self.collectionView?.register(nib, forCellWithReuseIdentifier: String(describing: CardCell.self))
+        let nib = UINib(nibName: String(describing: TitleCardCell.self), bundle: nil)
+        self.collectionView?.register(nib, forCellWithReuseIdentifier: String(describing: TitleCardCell.self))
     }
-
+    
 }
 
 // UICollectionViewDelegate
-extension IndexViewController: UICollectionViewDelegate {
-
-     func collectionView(_ collectionView: UICollectionView,
+extension DiscoverViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize{
         return CGSize(width: 280, height: 400)
@@ -54,25 +56,22 @@ extension IndexViewController: UICollectionViewDelegate {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let toViewController = mainStoryboard.instantiateViewController(withIdentifier: String(describing: DetailViewController.self))
         let theAttributes:UICollectionViewLayoutAttributes! = collectionView.layoutAttributesForItem(at: indexPath)
-        self.selectedFrame = collectionView.convert(theAttributes.frame, to: collectionView.superview!.superview)
-        self.selectedCell = collectionView.cellForItem(at: indexPath)
         self.navigationController?.pushViewController(toViewController, animated: true)
     }
-
+    
 }
 
 
 // UICollectionViewDataSource
-extension IndexViewController: UICollectionViewDataSource {
-
+extension DiscoverViewController: UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CardCell.self), for: indexPath)
+        return collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: TitleCardCell.self), for: indexPath)
     }
-
-
+    
+    
     func collectionView(_: UICollectionView, numberOfItemsInSection _: Int) -> Int {
         return 10
     }
-
+    
 }
-
